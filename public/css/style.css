@@ -1,0 +1,64 @@
+body {
+    background-color: brown;
+    color: whitesmoke;
+    font-family:monospace;
+    height: 500px;
+    text-align: center;
+    
+}
+
+
+h2 {
+   text-align:center;
+   flex-wrap:wrap;
+   background-color: lightgrey;
+   font:black;
+}
+
+h3 { 
+   
+    
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+h6 {
+    background-color: black;
+   
+    text-align: center;
+   
+} 
+
+.button {
+    color:white;
+    
+    
+}
+
+.btn {
+    width:auto;
+}
+ 
+
+.form-group {
+    margin-top:25px;
+}
+
+.head {
+    text-align: left;
+}
+
+#bulk {
+    margin-right: 4.5%;
+}
+
+#email-signup {
+    margin-bottom: 25px;
+}
+
+
+
+#email-login {
+    margin-bottom: 25px;
+}
+

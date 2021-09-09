@@ -1,0 +1,15 @@
+
+<!-- Loop over each object in the projects array -->
+{{#each postsDataJson as |post| }}
+    
+    <h2>
+      <a href="/post/{{post.id}}">{{post.title}}</a>
+    </h2>
+    <h3>
+      {{post.post_content}}
+    </h3>
+    
+    <h6>What brilliant mind penned this? {{post.user.username}} on {{post.date_created}}</h6>
+ 
+
+{{/each}}

@@ -1,0 +1,47 @@
+
+    <h1>Hola mi amigo, {{username}}!</h1>
+
+<br></br><br></br>
+    <h3>Share your tech thoughts...</h3>
+    <br></br><br></br>
+  <div class= "newPost">
+    <form class="form new-post-form">
+ 
+        <label for="post-name">Title:</label>
+        <input id="title"/>
+      <br></br>
+      <br></br>
+      
+      
+     </div>
+     <div id= "bulk">   
+        <label for="post-desc">What's the 411?:</label>
+        <textarea id="details"></textarea>
+      
+  <br></br><br></br>
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+
+  {{#if posts.length}}
+  <div class="post-list"></div>
+    <h3>My thoughts:</h3>
+
+    {{#each postsDataJson as |post|}}
+  
+  
+        <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
+    
+   
+        <button data-id="{{post.id}}">delete</button>
+     
+  
+    {{/each}}
+
+  {{/if}}
+</div>
+
+<script src="/dashboard.js"></script>
+
+ 
